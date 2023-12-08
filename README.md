@@ -20,6 +20,7 @@
 - Information Expert (GRASP)
 - Polymorphism (GRASP)
 - Indirection (GRASP)
+- Low Coupling / High Cohesion (GRASP)
 - Protected Variations (GRASP)
 - MVP-Passive (MV*)
 
