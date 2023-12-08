@@ -8,14 +8,12 @@ public class MainInventoryPresenter : MonoBehaviour, IInventoryObserver
     private ViewSlotPresenter[] _slotPresenters;
     private List<InventoryItem> _items = new();
 
-    private Inventory _mainInventory;
     private ItemDistributor _distributor;
 
 
     [Inject]
     public void Construct(Inventory inventory, ItemDistributor distributor)
     {
-        _mainInventory = inventory;
         _distributor = distributor;
         inventory.AddObserver(this);
     }
